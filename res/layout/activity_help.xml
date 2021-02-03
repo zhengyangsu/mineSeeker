@@ -1,0 +1,79 @@
+
+	<RelativeLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+  		xmlns:tools="http://schemas.android.com/tools"
+  		android:background = "@drawable/bg0"	
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:paddingBottom="@dimen/activity_vertical_margin"
+    	android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+    	android:paddingTop="@dimen/activity_vertical_margin"
+    	tools:context=".HelpActivity" >
+
+    <TextView
+        android:id="@+id/iconSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/imageSources"
+        android:layout_alignBottom="@+id/imageSources"
+        android:layout_alignRight="@+id/CMPT276_hyperlink"
+        android:layout_marginRight="59dp"
+        android:text="@string/source0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/sources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/instructions"
+        android:text="@string/source"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/imageSources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sources"
+        android:layout_alignBottom="@+id/sources"
+        android:layout_alignRight="@+id/instructions"
+        android:layout_marginRight="36dp"
+        android:text="@string/source1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="@string/instructions"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/authors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sources"
+        android:layout_below="@+id/iconSource"
+        android:paddingTop="0dp"
+        android:text="@string/authors"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/CMPT276_hyperlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/instructions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="@string/CMPT276_hyperlink"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="20sp" />
+
+	</RelativeLayout>
+
